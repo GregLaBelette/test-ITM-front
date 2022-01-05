@@ -1,0 +1,39 @@
+body {
+  --blue: #102B42;
+  --red: #D01D17;
+  --yellow: #FAB814;
+  --green: #069891;
+  --transblue: rgba(17, 43, 66, 0.9)
+}
+
+.text-blue {
+  color: var(--blue)
+}
+.text-red {
+  color: var(--red)
+}
+.text-yellow {
+  color: var(--yellow)
+}
+.text-green {
+  color: var(--green)
+}
+.text-transblue {
+  color: var(--transblue)
+}
+
+.bg-blue {
+  background-color: var(--blue);
+}
+.bg-red {
+  background-color: var(--red);
+}
+.bg-yellow {
+  background-color: var(--yellow);
+}
+.bg-green {
+  background-color: var(--green);
+}
+.bg-transblue {
+  background-color: var(--transblue);
+}

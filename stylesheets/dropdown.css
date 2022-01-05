@@ -1,0 +1,7 @@
+.dropdown-item {
+  color: white;
+}
+
+.dropdown-item:hover {
+  color: var(--blue)
+}

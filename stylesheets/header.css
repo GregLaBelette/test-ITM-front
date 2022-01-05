@@ -1,0 +1,12 @@
+.header {
+  padding: 4vh 0 4vh 0;
+  background-image: linear-gradient(rgba(17, 43, 66, 0.9), rgba(17, 43, 66, 0.9)), url('../images/background.png');
+  background-size: cover;
+  background-position: center;
+}
+
+.maintitle {
+  font-weight: 100;
+  letter-spacing: 8px;
+  font-size: 320%;
+}

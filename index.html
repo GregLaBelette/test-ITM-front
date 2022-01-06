@@ -22,17 +22,14 @@
 
   <!-- social media -->
   <meta property="og:title" content="Test Technique In The Memory - Grégoire Vallette" />
-  <meta property="og:url" content="" />
-  <meta property="og:image" content="" />
-  <meta property="og:image" content="" />
+  <meta property="og:url" content="images/favicon.png" />
+  <meta property="og:image" content="images/favicon.png" />
+  <meta property="og:image" content="images/favicon.png" />
   <meta property="og:type" content="website" />
   <meta property="og:description" content="Front-end side of a query exercise to a shopping orders database" />
 
   <!-- stylesheets -->
   <link rel="stylesheet" href="stylesheets/index.css">
-
-  <!-- fontawesome -->
-  <script src="https://kit.fontawesome.com/576b94372a.js" crossorigin="anonymous"></script>
 </head>
 
 <body>
@@ -89,11 +86,16 @@
     </div>
   </div>
   <h3 class='text-center my-4'>Revenue Per Month</h3>
-  <div class="container" id="chart">
+  <div class="container">
+    <div id="chart" style="height: 500px;" class='mb-4'>
+    </div>
   </div>
 
-  <script src="scripts/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="index.js" type='module'></script>
+  <script src="scripts/bootstrap/bootstrap.bundle.min.js"></script>
+  <script src="scripts/chartkick/chart.js"></script>
+  <script src="scripts/chartkick/chartjs-adapter-date-fns.bundle.js"></script>
+  <script src="scripts/chartkick/chartkick.js"></script>
 </body>
 
 </html>

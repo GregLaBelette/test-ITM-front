@@ -9,7 +9,7 @@ const updateCount = (data) => {
 
 const updateCountries = (data) => {
   const dropdown = document.getElementById('countries');
-  dropdown.innerHTML = '<option selected value="">All countries selected</option>';
+  dropdown.innerHTML = '<option selected value="">All countries</option>';
   data.countries.forEach((country) => {
     const list = `<option value="${country}">${country}</option>`
     dropdown.insertAdjacentHTML('beforeend', list)
@@ -22,8 +22,8 @@ const updateSummary = (data) => {
   document.getElementById('customers').innerHTML=`${data.customers}`
 }
 
-const updateChart = (chart) => {
-  console.log(chart)
+const updateChart = (data) => {
+  new Chartkick.ColumnChart("chart", data, { colors: ['rgba(17, 43, 66, 0.9)'], dataset: { borderWidth: 0 } })
 }
 
 // API calls
@@ -67,9 +67,8 @@ window.onload = () => {
 }
 
 function addCountriesListener(data) {
-  document.getElementById('countries').childNodes.forEach((elt) => {
-    elt.addEventListener('click', (e) => {
-      update(elt.value )
-    })
+
+  document.getElementById('countries').addEventListener('change', (e) => {
+    update(e.currentTarget.value);
   })
 }

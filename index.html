@@ -42,22 +42,15 @@
       <img src="images/favicon.png" alt="" style='width: 15vh'>
       <div class="titles ps-4">
         <h1 class='maintitle'>Welcome to ITM - test</h1>
-        <div class="dropdown">
-          <button class="btn bg-green text-white dropdown-toggle" type="button" id="dropdownMenuButton1" data-bs-toggle="dropdown" aria-expanded="false">
-            select country
-          </button>
-          <ul class="dropdown-menu rounded bg-green text-white" aria-labelledby="dropdownMenuButton1">
-            <li><a class="dropdown-item" href="#">Action</a></li>
-            <li><a class="dropdown-item" href="#">Another action</a></li>
-            <li><a class="dropdown-item" href="#">Something else here</a></li>
-          </ul>
-        </div>
+        <select id='countries' class="form-select" aria-label="Default select example">
+          <option selected value="">All countries</option>
+        </select>
       </div>
     </div>
 
   </div>
 
-  <h3 class='text-center my-4'>Summary</h3>
+  <h3 class='text-center my-4'>Summary (<span id='count'>0 orders</span>)</h3>
   <div class="container">
     <div class="row">
       <div class="col-12 col-lg-4 m-auto">
@@ -67,7 +60,7 @@
           </div>
           <img src="images/euro.png" class='my-4' style='width: 10vh'>
           <div class="d-flex justify-content-end w-100">
-            <h4>10.1 M€</h4>
+            <h4 id='revenue' >10.1 M€</h4>
           </div>
         </div>
       </div>
@@ -78,7 +71,7 @@
           </div>
           <img src="images/caddie.png" class='my-4' style='width: 10vh'>
           <div class="d-flex justify-content-end w-100">
-            <h4>40.1 €</h4>
+            <h4 id='average'>40.1 €</h4>
           </div>
         </div>
       </div>
@@ -89,13 +82,15 @@
           </div>
           <img src="images/avatar.png" class='my-4' style='width: 10vh'>
           <div class="d-flex justify-content-end w-100">
-            <h4>55 K</h4>
+            <h4 id='customers'>55 K</h4>
           </div>
         </div>
       </div>
     </div>
   </div>
   <h3 class='text-center my-4'>Revenue Per Month</h3>
+  <div class="container" id="chart">
+  </div>
 
   <script src="scripts/bootstrap/bootstrap.bundle.min.js"></script>
   <script src="scripts/index.js" type='module'></script>

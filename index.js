@@ -1,4 +1,4 @@
-const host = 'http://localhost:3000'
+const host = 'http://itm-test-back.gregoirevallette.com'
 const euros = new Intl.NumberFormat("fr-FR", { style: "currency", currency: "EUR", currencyDisplay: "symbol" })
 
 // View Updates

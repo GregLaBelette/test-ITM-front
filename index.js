@@ -23,7 +23,6 @@ const updateSummary = (data) => {
 }
 
 const updateChart = (chart) => {
-  document.getElementById('chart').innerHTML = chart
   console.log(chart)
 }
 
@@ -48,8 +47,8 @@ const fetchData = (country) => {
 }
 
 const fetchChart = (country) => {
-  fetch(`${host}/chart?country=${country}`,{ headers: { 'Accept': 'text/plain' } } )
-  .then(res => res.text())
+  fetch(`${host}/chart?country=${country}`,{ headers: { 'Accept': 'application/json' } } )
+  .then(res => res.json())
   .then((chart) => {
     updateChart(chart);
   })
